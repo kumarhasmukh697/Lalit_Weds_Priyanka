@@ -54,14 +54,7 @@ h1 {
     animation: fadeIn 2s;
 }
 
-@keyframes slideIn {
-    0% {
-        transform: translateX(100%);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-}
+
 
 
 #animated-heading {
@@ -72,12 +65,14 @@ h1 {
 
 @keyframes slideIn {
     0% {
-        transform: translateX(-100%);
-    }
-    100% {
         transform: translateX(100%);
     }
+    100% {
+        transform: translateX(-100%);
+    }
 }
+
+
 
 .content-border {
     border: 5px solid #ff6f61;
