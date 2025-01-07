@@ -1,0 +1,158 @@
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #ffecd2, #fcb69f);
+    color: #333;
+    text-align: center;
+}
+
+h1 {
+    margin: 20px 0;
+    font-size: 2em;
+    color: #ff6f61;
+}
+
+#name-form {
+    padding: 50px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
+    margin: 100px auto;
+    border-radius: 10px;
+}
+
+#auth-form input {
+    padding: 10px;
+    margin: 10px;
+    width: 80%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#auth-form button {
+    padding: 10px 20px;
+    background: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+
+
+#auth-form button:hover {
+    background: #d11b0a;
+    font-weight: 600;
+}
+
+#main-content {
+    padding: 20px;
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#animated-heading {
+    font-size: 2.5em;
+    color: #e91c15;
+    animation: slideIn 10s linear infinite;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.content-border {
+    border: 5px solid #ff6f61;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px auto;
+    max-width: 900px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+@media (min-width: 768px) {
+    .images {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+.bride-info, .groom-info {
+    text-align: center;
+}
+
+.bride-info img, .groom-info img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.bride-info p, .groom-info p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #444;
+}
+
+#timer {
+    margin: 20px 0;
+    font-size: 1.5em;
+    color: #3924d7;
+}
+
+.video {
+    margin: 20px 0;
+}
+
+.video video {
+    max-width: 90%;
+   
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    background-color:#ff6f61; /* Green background */
+    color: white; /* White text */
+    padding: 15px 32px; /* Padding around the text */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Align with other inline elements */
+    font-size: 16px; /* Font size */
+    margin: 4px 2px; /* Margin around the button */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    border: none; /* Remove border */
+    border-radius: 8px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+/* Change background color on hover */
+button:hover {
+    background-color: #45a049;
+}
+

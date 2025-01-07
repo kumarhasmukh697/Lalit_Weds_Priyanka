@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding of Latlit and Priyanka</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <style>
+    
+        #animated-heading {
+            white-space: nowrap; /* Ensures the heading stays in one line */
+            overflow: hidden;
+            display: inline-block;
+            animation: slideIn 10s linear infinite;
+        }
+
+        @keyframes slideIn {
+            0% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(100%);
+            }
+        }
+    </style>
+</head>
+<body style="background-image: url('images/wedding_banner1.jpg'); background-size: cover; background-attachment: fixed; background-position: center;">
+    <div id="name-form">
+        <h1>Enter Bride and Groom Names</h1>
+        <form id="auth-form">
+            <input type="text" id="bride-name" placeholder="Bride's Name" required>
+            <input type="text" id="groom-name" placeholder="Groom's Name" required>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div id="main-content" style="display: none;">
+        <h1 id="animated-heading">पलायसा परिवार आपका हार्दिक स्वागत करता है</h1>
+        <div class="content-border">
+            <div class="images">
+                <div class="bride-info">
+                    <img src="images/bride.jpg" alt="Bride">
+                    <h2>Lalit</h2>
+                    <p>सुपौत्र श्री कंकुबाई स्व. सवाजी पलायसा</p>
+                    <p>सुपुत्र श्री कंकुबाई स्व. सवाजी पलायसा</p>
+                </div>
+                <div><h1>Weds</h1></div>
+                <div class="groom-info">
+                    <img src="images/groom.jpg" alt="Groom">
+                    <h2>Priyanka</h2>
+                    <p>सुपौत्री श्री शान्तिबाई स्व. देवारामजी फोदर</p>
+                    <p>सुपुत्री श्रीमती कान्तादेवी रमेशजी फोदर</p>
+                </div>
+            </div>
+        </div>
+        <div id="timer">
+            <h2>Days To Go</h2>
+            <p id="countdown"></p>
+        </div>
+        <!-- <div class="video">
+            <h2>Pre-Wedding Photoshoot</h2>
+            <video controls>
+                <source src="videos/prewedding.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div> -->
+        <div class="video">
+            <h2>Wedding Invitation Video</h2>
+            <!-- <video controls> -->
+                <!-- <source src="https://drive.google.com/file/d/1_L5R5f4qjvYOWWrwQUan-7Y1dtQMUUHJ/view?usp=sharing" type="video/mp4"> -->
+                 <a href="https://drive.google.com/file/d/1_L5R5f4qjvYOWWrwQUan-7Y1dtQMUUHJ/view?usp=sharing"><button>video link</button></a>
+               
+            <!-- </video> -->
+        </div>
+        <div class="invitation-card">
+            <h2>Wedding Invitation Card</h2>
+            <a href="https://drive.google.com/file/d/1HBEpovMUC5EDgIi8kzI-4LKK51uAGKsK/view?usp=sharing" target="_blank" style="color: #040a09; font-size: 1.2em; text-decoration: none;"><button>Click here to view the invitation card</button></a>
+        </div>
+    </div>
+</body>
+</html>
